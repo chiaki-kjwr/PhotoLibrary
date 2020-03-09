@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<header>
+<html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sriracha&display=swap" rel="stylesheet">
-    <link rel = "css/style.css">
+    <link rel = "stylesheet"  href ="css/stylesheet.css">
 
     <title>Myphotos</title>
 
-</header>
+</head>
 <body>
     <header>
         <h1>My Photos</h1>
 
     </header>
+
     <div class = "container">
-  <div id ="imag_unit">
+  <div id ="img_unit">
   <div class ="photo">
-  <img src = "img/img02.jpg">
+  <img src = "img/img01.jpg">
+  <div class = "inner"><p>コメント１<span>nickname</span></p></div>
 
   <div class ="photo">
     <img src = "img/img02.jpg">
@@ -63,6 +66,14 @@
     caption.ClassName = 'inner';
     document.getElementById('imag_unit').appendChild(img);
     caption.innerHTML = '<p>' + images[0].caption + '<span>' + images[0].name + '</span></p>' ;
+
+
+    div = document.createElement('div');
+    div.ClassName = 'photo';
+    div.appendChild(img);
+    div.appendChild(caption);
+
+    document.getElementById('img_unit').appendChild(div);
 
     alert(images[0].caption);
 
