@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sriracha&display=swap" rel="stylesheet">
+    <link rel = "css/style.css">
+
+    <title>Myphotos</title>
+
+</header>
+<body>
+    <header>
+        <h1>My Photos</h1>
+
+    </header>
+    <div class = "container">
+  <div id ="imag_unit">
+  <div class ="photo">
+  <img src = "img/img02.jpg">
+
+  <div class ="photo">
+    <img src = "img/img02.jpg">
+
+    <div class ="photo">
+        <img src = "img/img03.jpg">
+
+  <div class = "inner">
+    <p>コメント１<span>nickname</span></p>
+
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+    var images = [
+        {
+        "path":"img/imag01.jpg",
+        "name":"name01",
+        "caption":"コメント1"
+        },
+        {
+        "path":"img/imag02.jpg",
+        "name":"name02",
+        "caption":"コメント2"
+        },
+        {
+        "path":"img/imag03.jpg",
+        "name":"name03",
+        "caption":"コメント3"
+        },
+    ];
+
+
+    var img;
+    var caption;
+    var div;
+
+    img = document.createElement('img');
+    img.setAttribute('src',images[0].path);
+    
+    caotion = document.createElement('div');
+    caption.ClassName = 'inner';
+    document.getElementById('imag_unit').appendChild(img);
+    caption.innerHTML = '<p>' + images[0].caption + '<span>' + images[0].name + '</span></p>' ;
+
+    alert(images[0].caption);
+
+</script>
+    
+</body>
+</html>
