@@ -17,16 +17,16 @@ img{
     vertical-align: top;
 }
 
-.header{
+header{
     background-color: #007acc;
     color: #fff;
     width: 100%;
     position: fixed;
     top:0;
-    z-index:100;
+    z-index: 100;
 }
 
-.header h1{
+header h1{
     margin: 0;
     font-size: 25px;
     padding: 5px;
@@ -45,9 +45,8 @@ img{
     color: #fff;
     margin: 0;
     width: 100%;
-
-
 }
+
 .inner p{
     padding:20px;
 }
