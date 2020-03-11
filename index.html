@@ -64,13 +64,16 @@
     var caption;
     var div;
 
+    for(var i=0, i<images.length; i++){
+
+
     img = document.createElement('img');
-    img.setAttribute('src',images[0].path);
+    img.setAttribute('src',images[i].path);
     
     caotion = document.createElement('div');
     caption.ClassName = 'inner';
     document.getElementById('imag_unit').appendChild(img);
-    caption.innerHTML = '<p>' + images[0].caption + '<span>' + images[0].name + '</span></p>' ;
+    caption.innerHTML = '<p>' + images[i].caption + '<span>' + images[i].name + '</span></p>' ;
 
 
     div = document.createElement('div');
@@ -79,8 +82,9 @@
     div.appendChild(caption);
 
     document.getElementById('img_unit').appendChild(div);
+    }
 
-    alert(images[0].caption);
+
 
 </script>
     
